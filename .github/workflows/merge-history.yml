@@ -1,0 +1,31 @@
+name: Merge News History
+
+on:
+  contents: write
+  push:
+    paths:
+      - 'news.json'
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Merge into history
+        run: |
+          node -e "
+          const fs = require('fs');
+          const news = JSON.parse(fs.readFileSync('news.json','utf8'));
+          let hist = [];
+          try { hist = JSON.parse(fs.readFileSync('history.json','utf8')); } catch(e){}
+          hist.push(news);
+          if(hist.length > 50) hist = hist.slice(-50);
+          fs.writeFileSync('history.json', JSON.stringify(hist, null, 2));
+          "
+      - name: Commit history
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add history.json
+          git diff --staged --quiet || git commit -m "Update history"
+          git push
