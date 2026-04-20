@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>KenvinZone – AI Intel Daily</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:           #070b18;
+  --navy:         #0d1630;
+  --navy2:        #111d3a;
+  --border:       #1e2d6b;
+  --border2:      #2a3a7a;
+  --cyan:         #00d4ff;
+  --cyan-dim:     rgba(0,212,255,0.10);
+  --cyan-glow:    rgba(0,212,255,0.25);
+  --purple:       #7c3aed;
+  --purple-dim:   rgba(124,58,237,0.15);
+  --purple-glow:  rgba(124,58,237,0.35);
+  --purple-light: #a78bfa;
+  --magenta:      #e040fb;
+  --mag-dim:      rgba(224,64,251,0.13);
+  --mag-glow:     rgba(224,64,251,0.3);
+  --blue:         #38bdf8;
+  --text:         #e0e8ff;
+  --muted:        #6b7db3;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:var(--bg); color:var(--text);
+  font-family:'Inter',sans-serif; font-size:14px;
+  line-height:1.6; min-height:100vh;
+}
+body::before{
+  content:''; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background-image:
+    linear-gradient(rgba(0,212,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.025) 1px, transparent 1px);
+  background-size:44px 44px;
+}
+
+/* HEADER */
+header{
+  position:sticky; top:0; z-index:100;
+  background:rgba(7,11,24,0.9); backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  padding:0 32px; display:flex; align-items:center; justify-content:space-between;
+  height:58px;
+}
+.logo{
+  font-family:'Syne',sans-serif; font-weight:800; font-size:17px;
+  display:flex; align-items:center; gap:10px;
+}
+.logo-mark{
+  width:30px; height:30px; border-radius:7px;
+  background:linear-gradient(135deg, var(--purple), var(--cyan));
+  display:flex; align-items:center; justify-content:center;
+  font-size:11px; font-weight:800; color:#fff;
+  box-shadow:0 0 18px var(--purple-glow);
+}
+.logo-sub{color:var(--cyan); margin-left:4px;}
+.header-right{display:flex; align-items:center; gap:14px;}
+#last-updated{font-family:'Space Mono',monospace; font-size:10px; color:var(--muted);}
+.refresh-btn{
+  background:var(--purple-dim); border:1px solid var(--purple-glow);
+  color:var(--purple-light); padding:5px 14px; border-radius:6px;
+  cursor:pointer; font-size:11px; font-family:'Space Mono',monospace;
+  transition:all 0.2s;
+}
+.refresh-btn:hover{background:var(--purple); color:#fff; box-shadow:0 0 14px var(--purple-glow);}
+
+/* MAIN */
+main{
+  position:relative; z-index:1;
+  max-width:1280px; margin:0 auto;
+  padding:28px 32px 80px;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg, var(--navy) 0%, #0e1240 50%, var(--navy) 100%);
+  border:1px solid var(--border); border-radius:16px;
+  padding:28px 32px; margin-bottom:20px;
+  position:relative; overflow:hidden;
+}
+.hero::before{
+  content:''; position:absolute; top:-70px; right:-70px;
+  width:240px; height:240px; pointer-events:none;
+  background:radial-gradient(circle, rgba(124,58,237,0.14) 0%, transparent 65%);
+}
+.hero::after{
+  content:''; position:absolute; bottom:-50px; left:25%;
+  width:180px; height:180px; pointer-events:none;
+  background:radial-gradient(circle, rgba(0,212,255,0.07) 0%, transparent 65%);
+}
+.hero-meta{display:flex; align-items:center; gap:10px; margin-bottom:14px;}
+.session-badge{
+  font-family:'Space Mono',monospace; font-size:10px;
+  padding:3px 12px; border-radius:20px;
+  border:1px solid var(--cyan-glow); color:var(--cyan);
+  background:var(--cyan-dim); text-transform:uppercase; letter-spacing:1px;
+}
+.date-badge{font-family:'Space Mono',monospace; font-size:11px; color:var(--muted);}
+#hero-summary{
+  font-family:'Syne',sans-serif; font-size:20px; font-weight:700;
+  line-height:1.55; color:var(--text); margin-bottom:18px; position:relative; z-index:1;
+}
+.top-picks{display:flex; gap:8px; flex-wrap:wrap; position:relative; z-index:1;}
+.top-pick-chip{
+  background:var(--purple-dim); border:1px solid var(--purple-glow);
+  color:var(--purple-light); padding:4px 14px; border-radius:20px; font-size:12px;
+  transition:all 0.2s;
+}
+.top-pick-chip:hover{background:var(--purple); color:#fff;}
+
+/* TREND */
+.trend-box{
+  background:linear-gradient(135deg, rgba(0,212,255,0.03), rgba(124,58,237,0.03));
+  border:1px solid var(--border); border-radius:12px;
+  padding:18px 24px; margin-bottom:22px;
+  display:flex; gap:14px; align-items:flex-start;
+}
+.trend-icon{font-size:20px; flex-shrink:0; margin-top:2px;}
+.trend-label{
+  font-family:'Space Mono',monospace; font-size:10px;
+  color:var(--cyan); letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;
+}
+#weekly-trend{font-size:13px; line-height:1.7; color:var(--text);}
+
+/* TABS */
+.tabs{
+  display:flex; gap:2px; margin-bottom:18px;
+  border-bottom:1px solid var(--border); overflow-x:auto;
+}
+.tab-btn{
+  background:none; border:none; font-family:'Syne',sans-serif;
+  font-size:12px; font-weight:700; color:var(--muted);
+  padding:9px 18px; cursor:pointer; white-space:nowrap;
+  border-bottom:2px solid transparent; margin-bottom:-1px;
+  transition:all 0.2s; letter-spacing:0.3px;
+}
+.tab-btn.active{color:var(--cyan); border-bottom-color:var(--cyan);}
+.tab-btn:hover:not(.active){color:var(--text);}
+.tab-count{
+  background:var(--navy2); border-radius:10px;
+  padding:1px 7px; font-size:10px; margin-left:5px;
+  font-family:'Space Mono',monospace; color:var(--muted);
+}
+.tab-btn.active .tab-count{color:var(--cyan); background:var(--cyan-dim);}
+
+/* FILTER */
+.filter-bar{display:flex; gap:8px; align-items:center; margin-bottom:18px; flex-wrap:wrap;}
+.filter-label{font-size:11px; color:var(--muted); font-family:'Space Mono',monospace;}
+.filter-btn{
+  background:var(--navy2); border:1px solid var(--border);
+  color:var(--muted); padding:5px 14px; border-radius:6px;
+  cursor:pointer; font-size:11px; transition:all 0.2s;
+}
+.filter-btn.active,.filter-btn:hover{
+  border-color:var(--purple-glow); color:var(--purple-light); background:var(--purple-dim);
+}
+
+/* GRID */
+.news-grid{
+  display:grid; grid-template-columns:repeat(auto-fill, minmax(360px,1fr)); gap:14px;
+}
+
+/* CARD */
+.card{
+  background:var(--navy); border:1px solid var(--border);
+  border-radius:12px; padding:20px; transition:all 0.2s;
+  cursor:pointer; text-decoration:none; display:block;
+  position:relative; overflow:hidden;
+}
+.card::before{
+  content:''; position:absolute; left:0; top:0; bottom:0; width:3px;
+  background:var(--imp-color, var(--border)); border-radius:3px 0 0 3px;
+}
+.card:hover{
+  border-color:var(--border2); transform:translateY(-2px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.5);
+}
+.card-header{display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:10px;}
+.card-title{font-family:'Syne',sans-serif; font-size:14px; font-weight:700; line-height:1.45; color:var(--text);}
+.imp-badge{
+  flex-shrink:0; font-family:'Space Mono',monospace; font-size:9px;
+  padding:3px 8px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; font-weight:700;
+}
+.imp-high  {background:var(--mag-dim);  color:var(--magenta); border:1px solid var(--mag-glow);}
+.imp-medium{background:var(--cyan-dim); color:var(--cyan);    border:1px solid var(--cyan-glow);}
+.imp-low   {background:rgba(56,189,248,0.08); color:var(--blue); border:1px solid rgba(56,189,248,0.2);}
+.card-summary{font-size:12px; color:var(--muted); line-height:1.65; margin-bottom:14px;}
+.card-footer{display:flex; justify-content:space-between; align-items:center;}
+.card-source{font-family:'Space Mono',monospace; font-size:10px; color:var(--blue); opacity:0.7;}
+.card-link{font-size:11px; color:var(--cyan); text-decoration:none; opacity:0.7; transition:opacity 0.2s;}
+.card-link:hover{opacity:1;}
+
+/* PANELS */
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+
+/* HISTORY */
+.history-list{display:flex; flex-direction:column; gap:8px;}
+.history-item{
+  background:var(--navy2); border:1px solid var(--border);
+  border-radius:8px; padding:16px 20px;
+  display:flex; gap:16px; align-items:flex-start;
+  cursor:pointer; transition:border-color 0.2s;
+}
+.history-item:hover{border-color:var(--border2);}
+.history-date{font-family:'Space Mono',monospace; font-size:10px; color:var(--muted); flex-shrink:0; width:130px;}
+.history-summary{font-size:13px; color:var(--text); line-height:1.5;}
+
+/* EMPTY / LOADING */
+.empty{text-align:center; padding:80px 20px; color:var(--muted);}
+.empty-icon{font-size:40px; margin-bottom:14px; opacity:0.3;}
+.empty-text{font-size:13px;}
+.loading{text-align:center; padding:60px; font-family:'Space Mono',monospace; font-size:11px; color:var(--muted);}
+.spinner{
+  width:28px; height:28px; border:2px solid var(--border);
+  border-top-color:var(--cyan); border-radius:50%;
+  animation:spin 0.7s linear infinite; margin:14px auto 0;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+@media(max-width:768px){
+  header{padding:0 16px;}
+  main{padding:16px 16px 60px;}
+  .news-grid{grid-template-columns:1fr;}
+  #hero-summary{font-size:17px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">KZ</div>
+    KenvinZone <span class="logo-sub">AI Intel</span>
+  </div>
+  <div class="header-right">
+    <span id="last-updated">Đang tải...</span>
+    <button class="refresh-btn" onclick="loadData()">⟳ Refresh</button>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-meta">
+      <span class="session-badge" id="session-badge">Morning</span>
+      <span class="date-badge" id="date-badge">--</span>
+    </div>
+    <div id="hero-summary">Đang tải dữ liệu...</div>
+    <div class="top-picks" id="top-picks"></div>
+  </div>
+
+  <div class="trend-box">
+    <div class="trend-icon">📡</div>
+    <div>
+      <div class="trend-label">Xu hướng tuần</div>
+      <div id="weekly-trend">--</div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('all',this)">Tất cả <span class="tab-count" id="count-all">0</span></button>
+    <button class="tab-btn" onclick="switchTab('products',this)">🤖 Sản phẩm <span class="tab-count" id="count-products">0</span></button>
+    <button class="tab-btn" onclick="switchTab('research',this)">🔬 Nghiên cứu <span class="tab-count" id="count-research">0</span></button>
+    <button class="tab-btn" onclick="switchTab('trading_ai',this)">📊 Trading AI <span class="tab-count" id="count-trading_ai">0</span></button>
+    <button class="tab-btn" onclick="switchTab('tools_workflow',this)">🛠️ Tools <span class="tab-count" id="count-tools_workflow">0</span></button>
+    <button class="tab-btn" onclick="switchTab('history',this)">🕐 Lịch sử</button>
+  </div>
+
+  <div class="filter-bar" id="filter-bar">
+    <span class="filter-label">Mức độ:</span>
+    <button class="filter-btn active" onclick="setFilter('all',this)">Tất cả</button>
+    <button class="filter-btn" onclick="setFilter('high',this)">🟣 Quan trọng</button>
+    <button class="filter-btn" onclick="setFilter('medium',this)">🔵 Trung bình</button>
+    <button class="filter-btn" onclick="setFilter('low',this)">🩵 Nhẹ</button>
+  </div>
+
+  <div id="panel-all"            class="tab-panel active"><div class="news-grid" id="grid-all"></div></div>
+  <div id="panel-products"       class="tab-panel"><div class="news-grid" id="grid-products"></div></div>
+  <div id="panel-research"       class="tab-panel"><div class="news-grid" id="grid-research"></div></div>
+  <div id="panel-trading_ai"     class="tab-panel"><div class="news-grid" id="grid-trading_ai"></div></div>
+  <div id="panel-tools_workflow" class="tab-panel"><div class="news-grid" id="grid-tools_workflow"></div></div>
+  <div id="panel-history"        class="tab-panel"><div class="history-list" id="history-list"></div></div>
+</main>
+
+<script>
+const DATA_URL='news.json', HISTORY_URL='history.json', REFRESH_MS=30*60*1000;
+let currentFilter='all', allItems=[];
+const CATS=['products','research','trading_ai','tools_workflow'];
+const IMP_COLOR={high:'var(--magenta)',medium:'var(--cyan)',low:'var(--blue)'};
+const IMP_CLASS={high:'imp-high',medium:'imp-medium',low:'imp-low'};
+const IMP_LABEL={high:'QUAN TRỌNG',medium:'TRUNG BÌNH',low:'NHẸ'};
+
+function makeCard(item){
+  return `<a class="card" href="${item.url||'#'}" target="_blank" rel="noopener"
+    style="--imp-color:${IMP_COLOR[item.importance]||'var(--border)'}">
+    <div class="card-header">
+      <div class="card-title">${item.title||''}</div>
+      <span class="imp-badge ${IMP_CLASS[item.importance]||'imp-low'}">${IMP_LABEL[item.importance]||''}</span>
+    </div>
+    <div class="card-summary">${item.summary||''}</div>
+    <div class="card-footer">
+      <span class="card-source">${item.source||''}</span>
+      ${item.url?'<span class="card-link">Đọc thêm →</span>':''}
+    </div>
+  </a>`;
+}
+
+function renderGrid(id,items){
+  const el=document.getElementById(id);
+  el.innerHTML=(!items||!items.length)
+    ?`<div class="empty" style="grid-column:1/-1"><div class="empty-icon">📭</div><div class="empty-text">Không có tin tức</div></div>`
+    :items.map(makeCard).join('');
+}
+
+function applyFilter(){
+  const f=currentFilter==='all'?allItems:allItems.filter(i=>i.importance===currentFilter);
+  renderGrid('grid-all',f);
+  CATS.forEach(cat=>renderGrid('grid-'+cat,f.filter(i=>i._cat===cat)));
+}
+
+function setFilter(f,btn){
+  currentFilter=f;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active'); applyFilter();
+}
+
+function switchTab(tab,btn){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel-'+tab).classList.add('active');
+  document.getElementById('filter-bar').style.display=tab==='history'?'none':'flex';
+}
+
+function renderHistory(h){
+  const el=document.getElementById('history-list');
+  if(!h||!h.length){el.innerHTML=`<div class="empty"><div class="empty-icon">🕐</div><div class="empty-text">Chưa có lịch sử</div></div>`;return;}
+  el.innerHTML=[...h].reverse().map(r=>`
+    <div class="history-item">
+      <div class="history-date">
+        ${r.generated_at?new Date(r.generated_at).toLocaleString('vi-VN'):'--'}<br>
+        <span style="display:inline-block;margin-top:4px;padding:2px 8px;border-radius:10px;font-size:9px;background:var(--cyan-dim);color:var(--cyan);border:1px solid var(--cyan-glow)">${r.session||''}</span>
+      </div>
+      <div class="history-summary">${r.summary||''}</div>
+    </div>`).join('');
+}
+
+async function loadData(){
+  document.getElementById('grid-all').innerHTML=
+    `<div class="loading" style="grid-column:1/-1">Đang tải tin tức mới nhất<div class="spinner"></div></div>`;
+  document.getElementById('last-updated').textContent='Đang tải...';
+  try{
+    const[nR,hR]=await Promise.all([
+      fetch(DATA_URL+'?t='+Date.now()),
+      fetch(HISTORY_URL+'?t='+Date.now()).catch(()=>null)
+    ]);
+    const news=await nR.json();
+    const hist=hR?await hR.json().catch(()=>[]):[];
+
+    document.getElementById('hero-summary').textContent=news.summary||'';
+    document.getElementById('session-badge').textContent=news.session==='evening'?'🌙 Evening':'☀️ Morning';
+    document.getElementById('date-badge').textContent=news.generated_at
+      ?new Date(news.generated_at).toLocaleDateString('vi-VN',{weekday:'long',year:'numeric',month:'long',day:'numeric'}):'';
+    document.getElementById('last-updated').textContent=
+      'Cập nhật: '+(news.generated_at?new Date(news.generated_at).toLocaleTimeString('vi-VN'):'--');
+    document.getElementById('top-picks').innerHTML=
+      (news.top_picks||[]).map(p=>`<span class="top-pick-chip">⚡ ${p}</span>`).join('');
+    document.getElementById('weekly-trend').textContent=news.weekly_trend||'--';
+
+    allItems=[];
+    const cats=news.categories||{};
+    CATS.forEach(cat=>(cats[cat]||[]).forEach(item=>allItems.push({...item,_cat:cat})));
+    const ord={high:0,medium:1,low:2};
+    allItems.sort((a,b)=>(ord[a.importance]||2)-(ord[b.importance]||2));
+
+    document.getElementById('count-all').textContent=allItems.length;
+    CATS.forEach(cat=>{document.getElementById('count-'+cat).textContent=allItems.filter(i=>i._cat===cat).length;});
+
+    applyFilter(); renderHistory(hist);
+  }catch(e){
+    document.getElementById('grid-all').innerHTML=
+      `<div class="empty" style="grid-column:1/-1"><div class="empty-icon">⚠️</div><div class="empty-text">Không thể tải dữ liệu.<br>Kiểm tra lại file news.json</div></div>`;
+    document.getElementById('last-updated').textContent='Lỗi tải dữ liệu';
+  }
+}
+loadData();
+setInterval(loadData,REFRESH_MS);
+</script>
+</body>
+</html>
