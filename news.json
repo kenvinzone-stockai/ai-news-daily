@@ -1,6 +1,6 @@
 ```json
 {
-  "generated_at": "2025-05-18T08:30:00Z",
+  "generated_at": "2025-05-07T08:00:00Z",
   "session": "morning",
   "summary": "Không có dữ liệu RSS được cung cấp để phân tích.",
   "top_picks": [
@@ -8,7 +8,7 @@
     "",
     ""
   ],
-  "weekly_trend": "Không có dữ liệu để đánh giá xu hướng tuần này.",
+  "weekly_trend": "",
   "categories": {
     "products": [],
     "research": [],
