@@ -360,7 +360,7 @@ async function loadData(){
       fetch(DATA_URL+'?t='+Date.now()),
       fetch(HISTORY_URL+'?t='+Date.now()).catch(()=>null)
     ]);
-    const news=await nR.json();
+    let newsText = await nR.text();  newsText = newsText   .replace(/^```json\s*/i, '')   .replace(/^```\s*/i, '')   .replace(/```\s*$/i, '')   .trim();  const news = JSON.parse(newsText);
     const hist=hR?await hR.json().catch(()=>[]):[];
 
     document.getElementById('hero-summary').textContent=news.summary||'';
