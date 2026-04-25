@@ -1,1 +1,101 @@
-{"session":"morning","summary":"Project Maven đã đánh dấu bước ngoặt quan trọng trong việc quân đội Mỹ chấp nhận và ứng dụng công nghệ AI vào các hoạt động quân sự, mở ra kỷ nguyên mới cho AI trong quốc phòng.","top_picks":["Project Maven trở thành dự án tiên phong giúp quân đội Mỹ thay đổi quan điểm về AI","Chương trình này đã chứng minh hiệu quả của AI trong phân tích hình ảnh và dữ liệu chiến trường","Mở đường cho sự hợp tác sâu rộng hơn giữa Silicon Valley và Lầu Năm Góc trong lĩnh vực AI"],"categories":{"products":[],"research":[{"title":"How Project Maven taught the military to love AI","source":"RSS Feed","url":null,"summary":"Project Maven là dự án đột phá đã giúp quân đội Mỹ nhận thức và chấp nhận tiềm năng to lớn của trí tuệ nhân tạo. Chương trình này đã thay đổi cách thức quân đội tiếp cận công nghệ AI, từ hoài nghi ban đầu đến việc tích cực triển khai trong các hoạt động thực tế, đặc biệt trong phân tích hình ảnh và dữ liệu từ máy bay không người lái.","importance":"high"}],"trading_ai":[],"tools_workflow":[]},"disclaimer":"Tổng hợp tự động từ RSS feeds. Không phải khuyến nghị đầu tư.","generated_at":"2025-05-15T08:30:00Z","weekly_trend":"Sự chấp nhận ngày càng tăng của AI trong quốc phòng và an ninh, với các dự án như Project Maven đặt nền móng cho ứng dụng AI quy mô lớn trong quân sự."}
+```json
+{
+  "generated_at": "2026-04-24T17:00:00Z",
+  "session": "morning",
+  "summary": "Tuần này AI tiếp tục tạo tranh cáị với vụ kiện Musk-Altman, Meta sa thải 10% nhân sự, và OpenAI ra mắt GPT-5.5. DeepSeek từ Trung Quốc công bố model V4 cạnh tranh với các đối thủ Mỹ. Anthropic mở rộng kết nối ứng dụng cá nhân cho Claude nhưng đối mặt với sự cố bảo mật Mythos. Cuộc thi ảnh danh giá định nghĩa lại 'bức ảnh thật' trong kỷ nguyên AI, trong khi ngành quân sự Mỹ tăng cường sử dụng AI qua Project Maven.",
+  "top_picks": [
+    "OpenAI công bố GPT-5.5 với khả năng coding và hiệu suất được cải thiện đáng kể, tiếp tục cuộc đua AI với các đối thủ",
+    "Meta cắt giảm 10% nhân sự (8,000 người) và đóng 6,000 vị trí tuyển dụng sau khi đầu tư mạnh vào AI với chi phí dự kiến 115-135 tỷ USD năm 2026",
+    "DeepSeek ra mắt model V4 preview, đánh dấu bước tiến của AI Trung Quốc với khả năng cạnh tranh các model hàng đầu từ Mỹ và tương thích chip Huawei"
+  ],
+  "weekly_trend": "Thị trường AI đang chứng kiến sự phân cực mạnh: các công ty lớn tăng tốc đầu tư và phát triển model mới (OpenAI GPT-5.5, DeepSeek V4) trong khi đối mặt với làn sóng phản đối từ công chúng. Khảo sát cho thấy Gen Z đặc biệt không ưa AI mặc dù sử dụng nhiều nhất. Ngành đang chuyển trọng tâm sang khách hàng doanh nghiệp với Anthropic mở rộng kết nối ứng dụng và các tool tự động hóa. Vấn đề bảo mật, sa thải nhân sự và tranh chấp pháp lý đang tạo bất ổn trong ngành.",
+  "categories": {
+    "products": [
+      {
+        "title": "OpenAI GPT-5.5: Model thông minh và hiệu quả hơn",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/917612/openai-gpt-5-5-chatgpt",
+        "summary": "OpenAI ra mắt GPT-5.5 chỉ 1 tháng sau GPT-5.4, với khả năng xuất sắc trong viết code, debug, nghiên cứu online và làm việc xuyên suốt nhiều công cụ. Model được tối ưu về hiệu quả và có thể xử lý các tác vụ phức tạp, đa phần mà không cần quản lý từng bước.",
+        "importance": "high"
+      },
+      {
+        "title": "DeepSeek V4: AI Trung Quốc thách thức các đối thủ Mỹ",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/918035/deepseek-preview-v4-ai-model",
+        "summary": "DeepSeek công bố preview model V4 open-source, cạnh tranh với Anthropic, Google và OpenAI. Cải thiện đáng kể về coding và tương thích với chip Huawei nội địa, đánh dấu cột mốc quan trọng cho ngành chip Trung Quốc sau 1 năm gây chấn động thị trường AI.",
+        "importance": "high"
+      },
+      {
+        "title": "Claude kết nối ứng dụng cá nhân: Spotify, Uber, TurboTax",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors",
+        "summary": "Anthropic mở rộng connectors cho Claude từ ứng dụng doanh nghiệp sang cá nhân như Audible, Spotify, Uber, AllTrails, Instacart, TurboTax. Claude sẽ tự động đề xuất ứng dụng liên quan trong hội thoại, tương tự như ChatGPT đã làm trước đó.",
+        "importance": "medium"
+      }
+    ],
+    "research": [
+      {
+        "title": "Project Maven: Lịch sử AI trong quân sự Mỹ",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson",
+        "summary": "Sách mới của Katrina Manson điều tra Project Maven từ 2017, hệ thống AI giúp quân đội Mỹ tấn công hơn 1,000 mục tiêu Iran trong 24h - gấp đôi chiến dịch Iraq. Dự án từng gây tranh cãi tại Google khiến nhân viên phản đối và công ty rút lui.",
+        "importance": "high"
+      },
+      {
+        "title": "Software Brain: Giới hạn của tư duy tự động hóa",
+        "source": "The Verge - Decoder",
+        "url": "https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation",
+        "summary": "Nilay Patel phân tích 'software brain' - cách nhìn thế giới như databases có thể tự động hóa. Giải thích tại sao công chúng ngày càng ghét AI: không phải vấn đề marketing mà là AI đòi hỏi con người phải 'làm phẳng' bản thân thành dữ liệu. Dân chúng không khao khát tự động hóa.",
+        "importance": "high"
+      },
+      {
+        "title": "World Press Photo định nghĩa 'bức ảnh thật' trong kỷ nguyên AI",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/gadgets/918016/prestigious-photo-contest-answers-what-is-a-photo",
+        "summary": "Giải thưởng nhiếp ảnh danh giá công bố quy định nghiêm ngặt về AI tools để đảm bảo tính chân thực. Ảnh đoạt giải 2026 'Separated by ICE' của Carol Guzy phải tuân thủ các quy tắc cụ thể, phản ánh quan điểm của ngành về nhiếp ảnh báo chí trong thời đại AI generative.",
+        "importance": "medium"
+      }
+    ],
+    "trading_ai": [
+      {
+        "title": "Meta sa thải 10% nhân sự, đóng 6,000 vị trí tuyển dụng",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
+        "summary": "Meta cắt giảm 8,000 nhân viên (10%) vào tháng 5 sau khi đầu tư mạnh vào AI với dự kiến chi 115-135 tỷ USD năm 2026, tăng từ 72 tỷ USD năm 2025. Công ty cũng đóng 6,000 vị trí tuyển dụng để tối ưu hiệu quả trong bối cảnh đầu tư data center và thuê nhân tài AI.",
+        "importance": "high"
+      },
+      {
+        "title": "Vụ kiện Musk vs Altman bắt đầu phiên tòa",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip",
+        "summary": "Phiên tòa Musk kiện OpenAI về cáo buộc gian lận bắt đầu 27/4 tại Oakland. Vụ kiện phản ánh cuộc đấu quyền lực giữa hai người đồng sáng lập, với các lý thuyết pháp lý từ vi phạm hợp đồng đến quảng cáo gian dối, diễn ra trong bối cảnh nhạy cảm cho cả hai bên.",
+        "importance": "high"
+      },
+      {
+        "title": "Tim Cook rời ghế CEO Apple, John Ternus kế nhiệm",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/podcast/917965/apple-ceo-cook-ternus-transition",
+        "summary": "Tim Cook chính thức rời vị trí CEO Apple, John Ternus lên thay. Sự thay đổi lãnh đạo có thể dẫn đến những thay đổi quan trọng tại công ty công nghệ có ảnh hưởng nhất. Vergecast phân tích di sản của Cook và tương lai Apple với podcast cùng John Gruber.",
+        "importance": "medium"
+      }
+    ],
+    "tools_workflow": [
+      {
+        "title": "Anthropic Mythos bị rò rỉ cho người dùng trái phép",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/917644/anthropic-claude-mythos-breach-humiliation",
+        "summary": "Model Mythos của Anthropic - được quảng cáo là quá nguy hiểm để phát hành công khai do khả năng cybersecurity - đã bị một nhóm nhỏ người dùng trái phép truy cập từ ngày công bố. Sự cố đặt ra câu hỏi về an ninh và uy tín của Anthropic trong việc xử lý AI nhạy cảm.",
+        "importance": "high"
+      },
+      {
+        "title": "Khảo sát: Gen Z ghét AI nhất mặc dù dùng nhiều nhất",
+        "source": "The Verge",
+        "url": "https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation",
+        "summary": "Các khảo sát cho thấy chỉ 18% Gen Z hy vọng về AI (giảm từ 27%), trong khi 31% cảm thấy tức giận (tăng từ 22%). AI có độ ưa thích thấp hơn cả ICE. Hơn 50% người Mỹ tin AI gây hại nhiều hơn lợi, 80% lo ngại về công nghệ này.",
+        "importance": "medium"
+      }
+    ]
+  },
+  "disclaimer": "Tổng hợp tự động từ RSS feeds. Không phải khuyến nghị đầu tư."
+}
+```
