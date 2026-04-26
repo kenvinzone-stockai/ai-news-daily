@@ -2,13 +2,13 @@
 {
   "generated_at": "2025-06-15T08:00:00Z",
   "session": "morning",
-  "summary": "Không có dữ liệu RSS mới từ các nguồn tin AI hôm nay. Tất cả các kênh thông tin từ The Verge, TechCrunch, MIT Technology Review, OpenAI, Hacker News, Google DeepMind, Hugging Face, GitHub Blog và GitHub Trending đều không trả về nội dung.",
+  "summary": "Không có dữ liệu RSS mới từ các nguồn tin trong phiên sáng nay. Tất cả các nguồn tin chính về AI và công nghệ đều không trả về nội dung.",
   "top_picks": [
-    "Không có bài viết nổi bật do thiếu dữ liệu nguồn",
-    "Vui lòng kiểm tra lại các nguồn RSS feed",
-    "Có thể các nguồn tin đang bảo trì hoặc chưa cập nhật"
+    "Chưa có bài viết nổi bật trong phiên sáng nay",
+    "Vui lòng kiểm tra lại các nguồn RSS",
+    "Dữ liệu sẽ được cập nhật khi có tin tức mới"
   ],
-  "weekly_trend": "Không đủ dữ liệu để xác định xu hướng tuần này do tất cả các nguồn RSS đều trống.",
+  "weekly_trend": "Không đủ dữ liệu để phân tích xu hướng tuần này do không có bài viết mới từ các nguồn RSS.",
   "categories": {
     "products": [],
     "research": [],
