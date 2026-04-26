@@ -1,10 +1,11 @@
 name: Merge News History
-
 on:
-  contents: write
   push:
     paths:
       - 'news.json'
+
+permissions:
+  contents: write
 
 jobs:
   merge:
