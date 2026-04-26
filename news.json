@@ -1,14 +1,14 @@
 ```json
 {
-  "generated_at": "2025-05-28T08:00:00Z",
+  "generated_at": "2025-06-15T08:00:00Z",
   "session": "morning",
-  "summary": "Không có dữ liệu RSS mới từ các nguồn tin AI hôm nay. Các feed từ The Verge, TechCrunch, MIT Technology Review, OpenAI Blog, Hacker News, Google DeepMind, Hugging Face, GitHub Blog và GitHub Trending đều trống.",
+  "summary": "Không có dữ liệu RSS mới từ các nguồn tin AI hôm nay. Tất cả các kênh thông tin từ The Verge, TechCrunch, MIT Technology Review, OpenAI, Hacker News, Google DeepMind, Hugging Face, GitHub Blog và GitHub Trending đều không trả về nội dung.",
   "top_picks": [
-    "Không có tin nổi bật hôm nay",
-    "Vui lòng kiểm tra lại các nguồn RSS",
-    "Dữ liệu có thể được cập nhật sau"
+    "Không có bài viết nổi bật do thiếu dữ liệu nguồn",
+    "Vui lòng kiểm tra lại các nguồn RSS feed",
+    "Có thể các nguồn tin đang bảo trì hoặc chưa cập nhật"
   ],
-  "weekly_trend": "Không đủ dữ liệu để phân tích xu hướng tuần này do không có bài viết mới từ các nguồn tin.",
+  "weekly_trend": "Không đủ dữ liệu để xác định xu hướng tuần này do tất cả các nguồn RSS đều trống.",
   "categories": {
     "products": [],
     "research": [],
