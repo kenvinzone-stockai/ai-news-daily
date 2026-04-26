@@ -1,14 +1,14 @@
 ```json
 {
-  "generated_at": "2025-06-15T08:00:00Z",
+  "generated_at": "2025-05-13T08:00:00Z",
   "session": "morning",
-  "summary": "Không có dữ liệu RSS mới từ các nguồn tin trong phiên sáng nay. Tất cả các nguồn tin chính về AI và công nghệ đều không trả về nội dung.",
+  "summary": "Không có dữ liệu RSS được cung cấp để phân tích.",
   "top_picks": [
-    "Chưa có bài viết nổi bật trong phiên sáng nay",
-    "Vui lòng kiểm tra lại các nguồn RSS",
-    "Dữ liệu sẽ được cập nhật khi có tin tức mới"
+    "",
+    "",
+    ""
   ],
-  "weekly_trend": "Không đủ dữ liệu để phân tích xu hướng tuần này do không có bài viết mới từ các nguồn RSS.",
+  "weekly_trend": "",
   "categories": {
     "products": [],
     "research": [],
