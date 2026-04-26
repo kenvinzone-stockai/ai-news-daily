@@ -1,87 +1,14 @@
-```json
 {
-  "generated_at": "2026-04-24T17:00:00Z",
+  "generated_at": "2026-04-26T07:00:00+07:00",
   "session": "morning",
-  "summary": "Ngày 24/4/2026: AI tiếp tục gây tranh cái với nhiều sự kiện nổi bật. Project Maven đã thay đổi cách quân đội Mỹ sử dụng AI trong chiến tranh, với hơn 1,000 mục tiêu bị tấn công trong 24 giờ đầu tại Iran. Tim Cook chuyển giao vai trò CEO Apple cho John Ternus, đánh dấu kỷ nguyên mới. Vụ kiện Musk vs Altman sắp diễn ra tòa ngày 27/4. DeepSeek ra mắt V4, cạnh tranh với các mô hình AI hàng đầu từ Mỹ. Meta sa thải 10% nhân sự (~8,000 người) trong bối cảnh đầu tư mạnh vào AI ($115-135B). OpenAI công bố GPT-5.5 với khả năng coding và hiệu suất được cải thiện. Anthropic mở rộng Claude với các ứng dụng cá nhân như Spotify, Uber. Bài phân tích sâu về 'Software Brain' giải thích tại sao công chúng ngày càng ghét AI dù sử dụng nhiều.",
-  "top_picks": [
-    "OpenAI ra mắt GPT-5.5: Mô hình AI mới thông minh hơn, tối ưu hơn với khả năng coding và xử lý đa nhiệm phức tạp vượt trội",
-    "Meta sa thải 10% nhân sự (8,000 người) và đóng 6,000 vị trí tuyển dụng giữa lúc đầu tư mạnh vào AI với chi phí lên đến $115-135 tỷ",
-    "Bài phân tích 'Software Brain': Giải thích khoảng cách sâu sắc giữa ngành công nghệ và người dùng thường - tại sao AI không phải vấn đề marketing mà là vấn đề triết lý"
-  ],
-  "weekly_trend": "Tuần này đánh dấu sự phân cực rõ rệt trong ngành AI: Các đại gia công nghệ tăng tốc phát triển và tích hợp AI (OpenAI GPT-5.5, DeepSeek V4, Claude mở rộng), đồng thời cắt giảm nhân sự mạnh (Meta 10%). Vụ kiện Musk-Altman và rò rỉ Anthropic Mythos cho thấy căng thẳng cạnh tranh. Đáng chú ý, dư luận công chúng - đặc biệt Gen Z - ngày càng phản đối AI mạnh mẽ hơn (chỉ 18% tích cực, 31% tức giận). Việc AI được ứng dụng quân sự (Project Maven) và áp lực năng lượng/môi trường từ data center cũng gây tranh cãi. Cuộc đấu AI-as-a-tool (doanh nghiệp) vs AI-for-consumers đang định hình lại ngành.",
+  "summary": "Đang cập nhật dữ liệu...",
+  "top_picks": [],
+  "weekly_trend": "",
   "categories": {
-    "products": [
-      {
-        "title": "OpenAI GPT-5.5: Mô hình AI thông minh nhất, tối ưu cho coding và đa nhiệm",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/917612/openai-gpt-5-5-chatgpt",
-        "summary": "OpenAI công bố GPT-5.5, được gọi là 'mô hình thông minh và trực quan nhất từ trước đến nay'. Phát hành chỉ 1 tháng sau GPT-5.4, GPT-5.5 vượt trội trong coding, debug, nghiên cứu online, xử lý spreadsheet/document. Điểm mạnh: xử lý tác vụ phức tạp đa bước, tự lập kế hoạch, sử dụng công cụ, tự kiểm tra và điều hướng qua mơ hồ. OpenAI nhấn mạnh hiệu suất cao hơn và khả năng làm việc xuyên suốt nhiều công cụ khác nhau.",
-        "importance": "high"
-      },
-      {
-        "title": "DeepSeek V4: Trung Quốc ra mắt mô hình AI cạnh tranh với Anthropic, Google, OpenAI",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/918035/deepseek-preview-v4-ai-model",
-        "summary": "DeepSeek (Trung Quốc) phát hành preview V4, mô hình AI mã nguồn mở có thể cạnh tranh với các hệ thống closed-source hàng đầu từ Mỹ. V4 cải thiện đáng kể so với phiên bản trước, đặc biệt về coding - năng lực trở thành trung tâm của AI agents. Đây là cột mốc quan trọng cho ngành chip Trung Quốc với khả năng tương thích công nghệ Huawei nội địa. Ra mắt đúng 1 năm sau khi DeepSeek gây chấn động ngành AI toàn cầu.",
-        "importance": "high"
-      },
-      {
-        "title": "Claude mở rộng kết nối ứng dụng cá nhân: Spotify, Uber Eats, TurboTax",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors",
-        "summary": "Anthropic ra mắt connectors mới cho Claude, mở rộng từ ứng dụng công việc sang cá nhân: Audible, Spotify, Uber, AllTrails, TripAdvisor, Instacart, TurboTax. Một số app như Spotify đã có tích hợp tương tự trên ChatGPT. Sau khi kết nối, Claude tự động gợi ý app phù hợp trong hội thoại (VD: AllTrails cho đề xuất hiking). Đây là bước mở rộng từ enterprise sang consumer của Anthropic.",
-        "importance": "medium"
-      }
-    ],
-    "research": [
-      {
-        "title": "Project Maven: Cách AI dạy quân đội Mỹ yêu công nghệ và thay đổi chiến tranh",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/917996/project-maven-military-ai-katrina-manson",
-        "summary": "Cuốn sách mới của nhà báo Katrina Manson điều tra Project Maven từ 2017 - thử nghiệm áp dụng computer vision vào video drone. Trong 24h tấn công Iran, Mỹ đánh 1,000+ mục tiêu (gấp đôi 'shock and awe' Iraq), nhờ hệ thống AI tăng tốc targeting. Maven Smart System là then chốt. Dự án từng gây tranh cãi khi Google (nhà thầu ban đầu) đối mặt phản đối từ nhân viên. Câu chuyện cho thấy sự chuyển đổi của quân đội trong việc chấp nhận AI warfare.",
-        "importance": "high"
-      },
-      {
-        "title": "Software Brain: Tại sao mọi người ghét AI và đây không phải vấn đề marketing",
-        "source": "The Verge - Decoder",
-        "url": "https://www.theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation",
-        "summary": "Bài phân tích sâu của Nilay Patel về 'Software Brain' - cách nhìn thế giới như chuỗi database có thể điều khiển bằng code. Đây là lý do khoảng cách giữa tech và công chúng: các CEO nghĩ AI có vấn đề marketing (Sam Altman chi $200M cho podcast TBPN), nhưng thực tế mọi người ghét AI vì nó 'làm phẳng' trải nghiệm con người. Poll: AI kém phổ biến hơn ICE, chỉ 35% hào hứng. Gen Z dùng nhiều nhất nhưng ghét nhất (18% tích cực, 31% tức giận). Vấn đề không phải quảng cáo mà là triết lý: đời sống con người không thể thu gọn thành database tự động hóa.",
-        "importance": "high"
-      },
-      {
-        "title": "World Press Photo 2026 định nghĩa 'ảnh thật là gì' trong thời đại AI",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/gadgets/918016/prestigious-photo-contest-answers-what-is-a-photo",
-        "summary": "Giải World Press Photo - nơi tính chân thực là tối thượng - công bố ảnh chiến thắng 2026: 'Separated by ICE' của Carol Guzy. Ảnh phải tuân thủ quy định nghiêm ngặt về sử dụng công cụ AI để đủ điều kiện. Tổ chức phi lợi nhuận đưa ra câu trả lời rõ ràng về định nghĩa 'nhiếp ảnh thực' giữa thời đại AI tạo sinh phổ biến. Đây là chuẩn mực quan trọng cho ngành photojournalism khi ranh giới giữa ảnh thật và ảnh tạo ngày càng mờ nhạt.",
-        "importance": "medium"
-      }
-    ],
-    "trading_ai": [
-      {
-        "title": "Meta sa thải 10% nhân sự (8,000 người) giữa lúc đầu tư mạnh AI",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
-        "summary": "Meta kế hoạch sa thải ~10% nhân viên vào tháng 5 (~8,000 người) và đóng ~6,000 vị trí tuyển dụng theo memo từ CPO Janelle Gale. Động thái này diễn ra song hành với đầu tư khổng lồ vào AI: $115-135 tỷ capex dự kiến 2026 (tăng từ $72.22 tỷ năm 2025) để hỗ trợ nghiên cứu AI và xây data center. Meta đã chi lớn thuê nhân tài AI hàng đầu và xây cơ sở hạ tầng (data center Oklahoma $1B+). Phản ánh xu hướng ngành: tăng đầu tư AI nhưng cắt giảm nhân sự truyền thống.",
-        "importance": "high"
-      },
-      {
-        "title": "Vụ kiện Musk vs Altman: Phiên tòa bắt đầu 27/4, hứa hẹn nhiều drama",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/917755/musk-altman-openai-xai-gossip",
-        "summary": "Phiên tòa Musk kiện OpenAI/Altman bắt đầu 27/4 tại Oakland, California. Musk đồng sáng lập OpenAI nhưng rời đi khi không được bổ nhiệm CEO, để lại Sam Altman. Lý thuyết pháp lý của Musk qua 2 năm: vi phạm hợp đồng, thực hành kinh doanh không công bằng, quảng cáo sai sự thật. Đây không chỉ là vụ kiện pháp lý mà là cuộc đấu cá nhân giữa 2 người quyền lực trong thời điểm nhạy cảm của ngành AI. Bài viết của Elizabeth Lopatto và Hayden Field hứa hẹn nhiều 'mess'.",
-        "importance": "medium"
-      },
-      {
-        "title": "Anthropic Mythos bị rò rỉ: Bẽ mặt sau tuyên bố bảo mật nghiêm ngặt",
-        "source": "The Verge",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/917644/anthropic-claude-mythos-breach-humiliation",
-        "summary": "Sau khi tuyên bố Mythos quá nguy hiểm (khả năng cybersecurity cao) nên kiểm soát chặt chẽ, Anthropic đối mặt sự cố: 'nhóm nhỏ người dùng trái phép' đã truy cập Mythos từ ngày công bố kế hoạch thử nghiệm. Bloomberg báo cáo Anthropic đang điều tra. Đây là 'cú đánh bẽ mặt' cho công ty xây thương hiệu trên an toàn AI và năng lực cybersecurity. Sự cố làm dấy lên câu hỏi về khả năng bảo mật thực tế của các mô hình AI 'siêu mạnh'.",
-        "importance": "medium"
-      }
-    ],
-    "tools_workflow": [
-      {
-        "title": "Tim Cook chuyển giao CEO Apple cho John Ternus: Kỷ nguyên mới",
-        "source": "The Verge - Vergecast",
-        "url": "https://www.theverge.com/podcast/917965/apple-ceo-cook-ternus-transition",
-        "summary": "Tim Cook từ chức CEO Apple, John Ternus kế nhiệm - sự kiện đã được dự đoán nhưng vẫn g
+    "products": [],
+    "research": [],
+    "trading_ai": [],
+    "tools_workflow": []
+  },
+  "disclaimer": "Tổng hợp tự động từ RSS feeds. Không phải khuyến nghị đầu tư."
+}
